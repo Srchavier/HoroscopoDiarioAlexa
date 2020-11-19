@@ -1,0 +1,65 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "pt-BR": {
+          "summary": "trás sua sorte e seu horóscopo.",
+          "examplePhrases": [
+            "abrir horóscopo  diário",
+            "sorte",
+            "signo"
+          ],
+          "keywords": [
+            "horóscopo",
+            "diário",
+            "signo",
+            "biscoito",
+            "sorte"
+          ],
+          "name": "horoscopo-alexa",
+          "description": "Essa skill trás serviços como biscoito da sorte, previsão de signo.",
+          "smallIconUri": "file://assets/images/pt-BR_smallIconUri.png",
+          "updatesDescription": "tudo e novo.",
+          "largeIconUri": "file://assets/images/pt-BR_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [],
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "horóscopo  diário \nsorte\nsigno",
+      "category": "ASTROLOGY",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:577986569335:function:8ac6734c-0736-4a67-8b6e-de24ad907448:Release_0"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::profile:name:read"
+      },
+      {
+        "name": "alexa::profile:email:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "pt-BR": {
+          "privacyPolicyUrl": "https://eduardugtinho.wixsite.com/website"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": true
+    }
+  }
+}

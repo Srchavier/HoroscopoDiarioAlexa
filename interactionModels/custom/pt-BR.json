@@ -1,0 +1,1512 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "horóscopo diário",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "que serviços ",
+            "qual servico",
+            "quais serviços ",
+            "serviços ",
+            "servicos"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "bom dia",
+            "Olá",
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "BiscoitoIntents",
+          "slots": [],
+          "samples": [
+            "meu biscoito da sorte",
+            "tenho sorte",
+            "abrir sorte",
+            "abri sorte",
+            "abrir biscoito",
+            "biscoito",
+            "qual minha sorte hoje",
+            "minha sorte",
+            "sorte",
+            "fale minha sorte",
+            "qual minha sorte",
+            "Buscar minha sorte"
+          ]
+        },
+        {
+          "name": "SimpatiaAmorIntents",
+          "slots": [
+            {
+              "name": "temaAmor",
+              "type": "temaAmorSimpatia",
+              "samples": [
+                "amor {temaAmor}",
+                "{temaAmor}"
+              ]
+            }
+          ],
+          "samples": [
+            "reconquistar o amor",
+            "quero um amor",
+            "ter o amor",
+            "pega o amor",
+            "trazer o amor",
+            "conquistar o amor",
+            "simpatia de paixão",
+            "simpatia para amor",
+            "simpatia para vida amorosa",
+            "simpatia de paixao"
+          ]
+        },
+        {
+          "name": "SignoIntents",
+          "slots": [
+            {
+              "name": "nomeSigno",
+              "type": "signos",
+              "samples": [
+                "{nomeSigno}",
+                "para {nomeSigno}",
+                "do {nomeSigno}",
+                "sobre o {nomeSigno}"
+              ]
+            },
+            {
+              "name": "hojeOuAmanha",
+              "type": "SignoDia",
+              "samples": [
+                "{hojeOuAmanha}"
+              ]
+            }
+          ],
+          "samples": [
+            "previsoes",
+            "previsão",
+            "signos",
+            "novidades do meu signo",
+            "sabe sobre meu signo",
+            "consulta signo",
+            "signo",
+            "meu signo",
+            "qual meu signo"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "BuscarUltimoComandoFalandoIntents",
+          "slots": [],
+          "samples": [
+            "repita",
+            "repiti",
+            "repitar biscoito",
+            "repitar signo",
+            "repitar",
+            "fala novamente",
+            "por favor repitar",
+            "retitar",
+            "repetir"
+          ]
+        },
+        {
+          "name": "MapaAstralIntents",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.Language",
+              "samples": [
+                "do {name}",
+                "para o {name}",
+                "sobre o {name}",
+                "para este {name}",
+                "{name}"
+              ]
+            },
+            {
+              "name": "city",
+              "type": "AMAZON.City",
+              "samples": [
+                "para a {city}",
+                "para a cidade {city}",
+                "a cidade é {city}",
+                "{city}"
+              ]
+            },
+            {
+              "name": "sigla",
+              "type": "sigla",
+              "samples": [
+                "para {sigla}",
+                "sigla é {sigla}",
+                "{sigla}"
+              ]
+            },
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "samples": [
+                "para {date}",
+                "para a data {date}",
+                "data de nascimento é {date}",
+                "{date}"
+              ]
+            },
+            {
+              "name": "hour",
+              "type": "AMAZON.TIME",
+              "samples": [
+                "ás {hour}",
+                "as {hour}",
+                "a hora foi {hour}",
+                "{hour}"
+              ]
+            }
+          ],
+          "samples": [
+            "astral",
+            "mapa",
+            "mapa astral"
+          ]
+        },
+        {
+          "name": "SimpatiaCasamentoIntents",
+          "slots": [
+            {
+              "name": "simpatiaCasamento",
+              "type": "temaNegocio",
+              "samples": [
+                "para o {simpatiaCasamento}",
+                "para {simpatiaCasamento}",
+                "para qual {simpatiaCasamento}",
+                "{simpatiaCasamento}"
+              ]
+            }
+          ],
+          "samples": [
+            "vida amorosa",
+            "casamento",
+            "simpatia de casamento"
+          ]
+        },
+        {
+          "name": "SimpatiaNegocioIntents",
+          "slots": [
+            {
+              "name": "simpatiaNegocio",
+              "type": "temaNegocio",
+              "samples": [
+                "para a {simpatiaNegocio}",
+                "para o {simpatiaNegocio}",
+                "{simpatiaNegocio}"
+              ]
+            }
+          ],
+          "samples": [
+            "negocios",
+            "negocio",
+            "sipatia para negócios",
+            "negócio",
+            "negócios",
+            "sipatia para negócio",
+            "simpatia para negocio",
+            "simpatia sobre negocios"
+          ]
+        },
+        {
+          "name": "SimpatiaTrabalhoIntents",
+          "slots": [
+            {
+              "name": "simpatiaTrabalho",
+              "type": "temaTrabalho",
+              "samples": [
+                "para {simpatiaTrabalho}",
+                "para a {simpatiaTrabalho}",
+                "tipo de {simpatiaTrabalho}",
+                "com o {simpatiaTrabalho}",
+                "para o {simpatiaTrabalho}",
+                "{simpatiaTrabalho}"
+              ]
+            }
+          ],
+          "samples": [
+            "tabalhar",
+            "simpatia para buscar tabalho",
+            "simpatia para trabalho",
+            "trabalho"
+          ]
+        },
+        {
+          "name": "SimpatiaSaudeIntents",
+          "slots": [
+            {
+              "name": "simpatiaSaude",
+              "type": "temaSaude",
+              "samples": [
+                "para o {simpatiaSaude}",
+                "para a {simpatiaSaude}",
+                "{simpatiaSaude}"
+              ]
+            }
+          ],
+          "samples": [
+            "vida mais saádavel",
+            "vida mais saudavel",
+            "simpatia para saúde",
+            "saúde",
+            "simpatia para saude",
+            "saude"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "1",
+              "name": {
+                "value": "peixes",
+                "synonyms": [
+                  "peixe"
+                ]
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "aquários ",
+                "synonyms": [
+                  "agua",
+                  "aquário "
+                ]
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "capricórnio "
+              }
+            },
+            {
+              "id": "4",
+              "name": {
+                "value": "sagitario",
+                "synonyms": [
+                  "sagitariano ",
+                  "saetero"
+                ]
+              }
+            },
+            {
+              "id": "5",
+              "name": {
+                "value": "escorpião "
+              }
+            },
+            {
+              "id": "6",
+              "name": {
+                "value": "libra",
+                "synonyms": [
+                  "libriano"
+                ]
+              }
+            },
+            {
+              "id": "7",
+              "name": {
+                "value": "virgem",
+                "synonyms": [
+                  "vigiriano"
+                ]
+              }
+            },
+            {
+              "id": "8",
+              "name": {
+                "value": "leão",
+                "synonyms": [
+                  "leo",
+                  "león",
+                  "selva",
+                  "rei"
+                ]
+              }
+            },
+            {
+              "id": "9",
+              "name": {
+                "value": "câncer ",
+                "synonyms": [
+                  "tumor",
+                  "carcinoma"
+                ]
+              }
+            },
+            {
+              "id": "10",
+              "name": {
+                "value": "gêmeos ",
+                "synonyms": [
+                  "gemelos"
+                ]
+              }
+            },
+            {
+              "id": "11",
+              "name": {
+                "value": "touro",
+                "synonyms": [
+                  "toriana",
+                  "taurino"
+                ]
+              }
+            },
+            {
+              "id": "12",
+              "name": {
+                "value": "áries ",
+                "synonyms": [
+                  "ariana",
+                  "ariano",
+                  "carneiro"
+                ]
+              }
+            }
+          ],
+          "name": "signos"
+        },
+        {
+          "values": [
+            {
+              "id": "true",
+              "name": {
+                "value": "Amanhã "
+              }
+            },
+            {
+              "id": "false",
+              "name": {
+                "value": "Hoje"
+              }
+            }
+          ],
+          "name": "SignoDia"
+        },
+        {
+          "values": [
+            {
+              "id": "DF",
+              "name": {
+                "value": "DF",
+                "synonyms": [
+                  "DF",
+                  "Distrito Federal"
+                ]
+              }
+            },
+            {
+              "id": "TO",
+              "name": {
+                "value": "TO",
+                "synonyms": [
+                  "TO",
+                  "Tocantins"
+                ]
+              }
+            },
+            {
+              "id": "SE",
+              "name": {
+                "value": "SE",
+                "synonyms": [
+                  "SE",
+                  "Sergipe"
+                ]
+              }
+            },
+            {
+              "id": "SP",
+              "name": {
+                "value": "SP",
+                "synonyms": [
+                  "SP",
+                  "São Paulo"
+                ]
+              }
+            },
+            {
+              "id": "SC",
+              "name": {
+                "value": "SC",
+                "synonyms": [
+                  "SC",
+                  "Santa Catarina"
+                ]
+              }
+            },
+            {
+              "id": "RR",
+              "name": {
+                "value": "RR",
+                "synonyms": [
+                  "RR",
+                  "Roraima"
+                ]
+              }
+            },
+            {
+              "id": "RO",
+              "name": {
+                "value": "RO",
+                "synonyms": [
+                  "RO",
+                  "Rondônia"
+                ]
+              }
+            },
+            {
+              "id": "RS",
+              "name": {
+                "value": "RS",
+                "synonyms": [
+                  "RS",
+                  "Rio Grande do Sul"
+                ]
+              }
+            },
+            {
+              "id": "RN",
+              "name": {
+                "value": "RN",
+                "synonyms": [
+                  "RN",
+                  "Rio Grande do Norte"
+                ]
+              }
+            },
+            {
+              "id": "RJ",
+              "name": {
+                "value": "RJ",
+                "synonyms": [
+                  "RJ",
+                  "Rio de Janeiro"
+                ]
+              }
+            },
+            {
+              "id": "PI",
+              "name": {
+                "value": "PI",
+                "synonyms": [
+                  "PI",
+                  "Piauí"
+                ]
+              }
+            },
+            {
+              "id": "PE",
+              "name": {
+                "value": "PE",
+                "synonyms": [
+                  "PE",
+                  "Pernambuco"
+                ]
+              }
+            },
+            {
+              "id": "PR",
+              "name": {
+                "value": "PR",
+                "synonyms": [
+                  "PR",
+                  "Paraná"
+                ]
+              }
+            },
+            {
+              "id": "PB",
+              "name": {
+                "value": "PB",
+                "synonyms": [
+                  "PB",
+                  "Paraíba"
+                ]
+              }
+            },
+            {
+              "id": "PA",
+              "name": {
+                "value": "PA",
+                "synonyms": [
+                  "PA",
+                  "Pará"
+                ]
+              }
+            },
+            {
+              "id": "MG",
+              "name": {
+                "value": "MG",
+                "synonyms": [
+                  "MG",
+                  "Minas Gerais"
+                ]
+              }
+            },
+            {
+              "id": "MS",
+              "name": {
+                "value": "MS",
+                "synonyms": [
+                  "MS",
+                  "Mato Grosso do Sul"
+                ]
+              }
+            },
+            {
+              "id": "MT",
+              "name": {
+                "value": "MT",
+                "synonyms": [
+                  "MT",
+                  "Mato Grosso"
+                ]
+              }
+            },
+            {
+              "id": "MA",
+              "name": {
+                "value": "MA",
+                "synonyms": [
+                  "MA",
+                  "Maranhão"
+                ]
+              }
+            },
+            {
+              "id": "GO",
+              "name": {
+                "value": "GO",
+                "synonyms": [
+                  "GO",
+                  "Goiás"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "ES",
+                "synonyms": [
+                  "Espírito Santo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "CE",
+                "synonyms": [
+                  "Ceará"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "BA",
+                "synonyms": [
+                  "Bahia"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "AM",
+                "synonyms": [
+                  "Amazonas"
+                ]
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "AP",
+                "synonyms": [
+                  "Amapá"
+                ]
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "AL",
+                "synonyms": [
+                  "Alagoas"
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "AC",
+                "synonyms": [
+                  "Acre"
+                ]
+              }
+            }
+          ],
+          "name": "sigla"
+        },
+        {
+          "values": [
+            {
+              "id": "fidelidade-sempre",
+              "name": {
+                "value": "Fidelidade sempre",
+                "synonyms": [
+                  "Fidelidade",
+                  "Fidelidade sempre"
+                ]
+              }
+            },
+            {
+              "id": "conquistar-alguem",
+              "name": {
+                "value": "Conquistar alguém",
+                "synonyms": [
+                  "Conquistar",
+                  "alguém",
+                  "Conquistar alguém"
+                ]
+              }
+            },
+            {
+              "id": "para-ter-a-pessoa-amada",
+              "name": {
+                "value": "Ter a pessoa amada",
+                "synonyms": [
+                  "Ter a pessoa amada",
+                  "Ter a pessoa",
+                  "Ter"
+                ]
+              }
+            },
+            {
+              "id": "amor-infinito",
+              "name": {
+                "value": "Amor infinito",
+                "synonyms": [
+                  "AMAR",
+                  "Amor",
+                  "infinito",
+                  "Amor infinito"
+                ]
+              }
+            },
+            {
+              "id": "para-amarrar-alguem-especial",
+              "name": {
+                "value": "Amarrar alguém especial",
+                "synonyms": [
+                  "especial",
+                  "alguém especial",
+                  "Amarrar alguém especial"
+                ]
+              }
+            },
+            {
+              "id": "para-ganhar-o-seu-amor",
+              "name": {
+                "value": "Conquistar um novo amor",
+                "synonyms": [
+                  "novo amor",
+                  "um novo amor",
+                  "Conquistar ",
+                  "Conquistar um novo amor"
+                ]
+              }
+            },
+            {
+              "id": "Amarracao-da-pessoa-amada",
+              "name": {
+                "value": "Amarração da pessoa amada",
+                "synonyms": [
+                  " pessoa amada",
+                  "Amarração",
+                  "Amarração da pessoa amada"
+                ]
+              }
+            }
+          ],
+          "name": "temaAmorSimpatia"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "fhfhfh"
+              }
+            }
+          ],
+          "name": "teste"
+        },
+        {
+          "values": [
+            {
+              "id": "para-afastar-alguem-de-seu-marido-ou-de-sua-mulher",
+              "name": {
+                "value": "Afastar alguém de seu marido ou de sua mulher",
+                "synonyms": [
+                  "Afastar alguém da sua mulher",
+                  "Afastar alguém de seu marido",
+                  "Afastar alguém "
+                ]
+              }
+            },
+            {
+              "id": "para-acabar-as-brigas-entre-o-casal",
+              "name": {
+                "value": "Acabar as brigas entre o casal",
+                "synonyms": [
+                  "brigas entre o casal",
+                  " brigas",
+                  "Acabar as brigas",
+                  "Acabar as brigas entre o casal"
+                ]
+              }
+            },
+            {
+              "id": "aumentar-a-paixao",
+              "name": {
+                "value": "Aumentar a paixão",
+                "synonyms": [
+                  "Aumentar",
+                  "paixão",
+                  "Aumentar a paixão"
+                ]
+              }
+            },
+            {
+              "id": "para-parar-de-brigar",
+              "name": {
+                "value": "Parar de brigar",
+                "synonyms": [
+                  "brigar",
+                  "Parar",
+                  "Parar de brigar"
+                ]
+              }
+            },
+            {
+              "id": "muita-felicidade-no-casamento",
+              "name": {
+                "value": "Muita felicidade no casamento",
+                "synonyms": [
+                  "Muita felicidade",
+                  "Muita felicidade no casamento"
+                ]
+              }
+            }
+          ],
+          "name": "temaCasamento"
+        },
+        {
+          "values": [
+            {
+              "id": "para-ter-sucesso-profissional",
+              "name": {
+                "value": "Ter sucesso profissional",
+                "synonyms": [
+                  "sucesso",
+                  " sucesso profissional",
+                  "Ter sucesso profissional"
+                ]
+              }
+            },
+            {
+              "id": "para-arrumar-emprego",
+              "name": {
+                "value": "Arrumar emprego",
+                "synonyms": [
+                  "Arrumar",
+                  "Arrumar emprego"
+                ]
+              }
+            },
+            {
+              "id": "para-crescer-na-vida",
+              "name": {
+                "value": "Crescimento profissional",
+                "synonyms": [
+                  "profissional",
+                  "Crescimento",
+                  "Crescimento profissional"
+                ]
+              }
+            },
+            {
+              "id": "para-prosperar-nos-negocios",
+              "name": {
+                "value": "Prosperar nos negócios",
+                "synonyms": [
+                  "Prosperar nos negócios",
+                  "Prosperar"
+                ]
+              }
+            },
+            {
+              "id": "para-atrair-dinheiro",
+              "name": {
+                "value": "Atrair dinheiro",
+                "synonyms": [
+                  "Atrair",
+                  "Atrair dinheiro"
+                ]
+              }
+            },
+            {
+              "id": "para-que-aparecam-os-bons-negocios",
+              "name": {
+                "value": "Apareçam os bons negócios",
+                "synonyms": [
+                  "bons negócios",
+                  "Apareçam",
+                  "Apareçam os bons negócios"
+                ]
+              }
+            }
+          ],
+          "name": "temaNegocio"
+        },
+        {
+          "values": [
+            {
+              "id": "para-evitar-mau-olhado-no-trabalho",
+              "name": {
+                "value": "Evitar mau olhado no trabalho",
+                "synonyms": [
+                  "Evitar",
+                  "Evitar mau olhado",
+                  "Evitar mau olhado no trabalho"
+                ]
+              }
+            },
+            {
+              "id": "para-manter-o-emprego",
+              "name": {
+                "value": "Manter o emprego",
+                "synonyms": [
+                  "Manter",
+                  "Manter o emprego"
+                ]
+              }
+            },
+            {
+              "id": "para-conseguir-trabalho-2",
+              "name": {
+                "value": "Obter emprego",
+                "synonyms": [
+                  "emprego",
+                  "Obter emprego",
+                  "Obter"
+                ]
+              }
+            },
+            {
+              "id": "para-arrumar-trabalho",
+              "name": {
+                "value": "Arrumar trabalho",
+                "synonyms": [
+                  "trabalho",
+                  "Arrumar",
+                  "Arrumar trabalho"
+                ]
+              }
+            },
+            {
+              "id": "para-ser-aprovado-em-concursos",
+              "name": {
+                "value": "Aprovação em concursos",
+                "synonyms": [
+                  "Aprovação",
+                  "concursos",
+                  "Aprovação em concursos"
+                ]
+              }
+            },
+            {
+              "id": "para-conseguir-emprego",
+              "name": {
+                "value": "Conseguir emprego",
+                "synonyms": [
+                  "Conseguir",
+                  "Conseguir emprego"
+                ]
+              }
+            }
+          ],
+          "name": "temaTrabalho"
+        },
+        {
+          "values": [
+            {
+              "id": "para-emagrecer-2",
+              "name": {
+                "value": "Perder gordura",
+                "synonyms": [
+                  "gordura",
+                  "Perder gordura"
+                ]
+              }
+            },
+            {
+              "id": "para-ter-uma-pele-bonita",
+              "name": {
+                "value": "Ter uma pele bonita",
+                "synonyms": [
+                  "pele bonita",
+                  "Ter uma pele bonita"
+                ]
+              }
+            },
+            {
+              "id": "para-parar-de-fumar-2",
+              "name": {
+                "value": "Largar o cigarro",
+                "synonyms": [
+                  "fumar",
+                  "cigarro",
+                  "Largar o cigarro"
+                ]
+              }
+            },
+            {
+              "id": "para-manter-a-saude",
+              "name": {
+                "value": "Manter a saúde",
+                "synonyms": [
+                  "saude",
+                  "saúde",
+                  "Manter a saúde"
+                ]
+              }
+            },
+            {
+              "id": "para-evitar-doencas",
+              "name": {
+                "value": "Evitar doenças",
+                "synonyms": [
+                  "doença",
+                  "doenças",
+                  "Evitar doenças"
+                ]
+              }
+            },
+            {
+              "id": "para-tirar-a-dor-de-colicas-renais",
+              "name": {
+                "value": "Tirar dor nas costas",
+                "synonyms": [
+                  "dor nas costas",
+                  "costa",
+                  "costas",
+                  "Tirar dor nas costas"
+                ]
+              }
+            },
+            {
+              "id": "para-ficar-mais-bonita",
+              "name": {
+                "value": "Ficar mais bonita",
+                "synonyms": [
+                  "mais bonita",
+                  "Ficar mais bonita"
+                ]
+              }
+            },
+            {
+              "id": "para-deixar-de-roncar",
+              "name": {
+                "value": "Deixar de roncar",
+                "synonyms": [
+                  "roncar",
+                  "Deixar de roncar"
+                ]
+              }
+            },
+            {
+              "id": "para-passar-dor-de-ouvido",
+              "name": {
+                "value": "Passar dor de ouvido",
+                "synonyms": [
+                  "ouvido",
+                  "dor de ouvido",
+                  "Passar dor de ouvido"
+                ]
+              }
+            },
+            {
+              "id": "sumir-com-verrugas",
+              "name": {
+                "value": "Sumir com verrugas",
+                "synonyms": [
+                  "verrugas",
+                  "Sumir com verrugas"
+                ]
+              }
+            },
+            {
+              "id": "para-emagrecer",
+              "name": {
+                "value": "Para emagrecer",
+                "synonyms": [
+                  "emagrecer",
+                  "Para emagrecer"
+                ]
+              }
+            },
+            {
+              "id": "para-crescer-cabelo",
+              "name": {
+                "value": "Crescer cabelo",
+                "synonyms": [
+                  "cabelo",
+                  "Crescer cabelo"
+                ]
+              }
+            },
+            {
+              "id": "para-ter-mais-saude",
+              "name": {
+                "value": "Ter mais saúde",
+                "synonyms": [
+                  "mais saúde",
+                  "Ter mais saúde"
+                ]
+              }
+            }
+          ],
+          "name": "temaSaude"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "SimpatiaAmorIntents",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "temaAmor",
+              "type": "temaAmorSimpatia",
+              "elicitationRequired": true,
+              "confirmationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.1536123531406.6632600974",
+                "elicitation": "Elicit.Slot.1536123531406.6632600974"
+              }
+            }
+          ]
+        },
+        {
+          "name": "SignoIntents",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "nomeSigno",
+              "type": "signos",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.569657194943.609387276846"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.569657194943.609387276846.472719740280"
+                }
+              ]
+            },
+            {
+              "name": "hojeOuAmanha",
+              "type": "SignoDia",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.354284251140.324350438693"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.354284251140.324350438693.1217253984743"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MapaAstralIntents",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.Language",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.923843417896.1582601525318"
+              }
+            },
+            {
+              "name": "city",
+              "type": "AMAZON.City",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.923843417896.777558589332"
+              }
+            },
+            {
+              "name": "sigla",
+              "type": "sigla",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.345032885482.1455225280221"
+              }
+            },
+            {
+              "name": "date",
+              "type": "AMAZON.DATE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.923843417896.1551762126513"
+              }
+            },
+            {
+              "name": "hour",
+              "type": "AMAZON.TIME",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.923843417896.1378150974217"
+              }
+            }
+          ]
+        },
+        {
+          "name": "SimpatiaCasamentoIntents",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "simpatiaCasamento",
+              "type": "temaNegocio",
+              "elicitationRequired": true,
+              "confirmationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.1090503735359.1264731546043",
+                "elicitation": "Elicit.Slot.1090503735359.1264731546043"
+              }
+            }
+          ]
+        },
+        {
+          "name": "SimpatiaNegocioIntents",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "simpatiaNegocio",
+              "type": "temaNegocio",
+              "elicitationRequired": true,
+              "confirmationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.801712651259.1288493760934",
+                "elicitation": "Elicit.Slot.801712651259.1288493760934"
+              }
+            }
+          ]
+        },
+        {
+          "name": "SimpatiaTrabalhoIntents",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "simpatiaTrabalho",
+              "type": "temaTrabalho",
+              "elicitationRequired": true,
+              "confirmationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.667337998414.416401146179",
+                "elicitation": "Elicit.Slot.667337998414.416401146179"
+              }
+            }
+          ]
+        },
+        {
+          "name": "SimpatiaSaudeIntents",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "simpatiaSaude",
+              "type": "temaSaude",
+              "elicitationRequired": true,
+              "confirmationRequired": true,
+              "prompts": {
+                "confirmation": "Confirm.Slot.1311519081500.1335614286327",
+                "elicitation": "Elicit.Slot.1311519081500.1335614286327"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Confirm.Slot.191580258885.270435835043",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please confirm {dynamicEntity} is what you want"
+          },
+          {
+            "type": "PlainText",
+            "value": "So I will add {dynamicEntity} . Ok?"
+          },
+          {
+            "type": "PlainText",
+            "value": "So you want to add {dynamicEntity} ?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Are you sure you want to add {dynamicEntity} ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.569657194943.609387276846",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Sobre qual signo?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.569657194943.609387276846.472719740280",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Não temos esse signo cadastrado."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.354284251140.324350438693",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Previsão de hoje ou amanhã?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.354284251140.324350438693.1217253984743",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "por favor previssão para hoje ou Amanhã?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.923843417896.1582601525318",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual seu nome?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.923843417896.1551762126513",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual a data de nascimento?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.923843417896.1378150974217",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual a hora de nascimento?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.923843417896.777558589332",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual cidade de nascimento?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.345032885482.1455225280221",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual sigla do seu estado?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1046972623148.368449069574.592423705456",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "{tema}"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1557761821771",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "simpatia sobre amor?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1536123531406.6632600974",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Temos algumas simpatias de amor para você como conquistar um novo amor, amor infinito, ter a pessoa amada, fidelidade sempre, conquistar alguém, amarração da pessoa amada."
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1536123531406.6632600974",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "sobre {temaAmor} mesmo?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1090503735359.1264731546043",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Simpatias para seu casamento temos como acabar as brigas entre o casal, Aumentar a paixão, Parar de brigar, Muita felicidade no casamento e Afastar alguém de seu marido ou de sua mulher."
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1090503735359.1264731546043",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "sobre {simpatiaCasamento} mesmo?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.667337998414.416401146179",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Simpatias para seu trabalho como Evitar mau olhado no trabalho, Manter o emprego, Obter emprego, Arrumar trabalho, Aprovação em concursos, Conseguir emprego."
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.667337998414.416401146179",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "sobre {simpatiaTrabalho} mesmo?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1311519081500.1335614286327",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Simpatias para saúde como Evitar doenças, Manter a saúde, Largar o cigarro, Ter uma pele bonita, Perder gordura, Tirar dor nas costas, Ficar mais bonita, Deixar de roncar, Passar dor de ouvido, Sumir com verrugas, Para emagrecer."
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1311519081500.1335614286327",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "sobre {simpatiaSaude} mesmo?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.801712651259.1288493760934",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "sobre {simpatiaNegocio} mesmo?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.801712651259.1288493760934",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Simpatias para seu negócio temos, Ter sucesso profissional, Arrumar emprego, Crescimento profissional, Prosperar nos negócios, Atrair dinheiro, Apareçam os bons negócios."
+          }
+        ]
+      }
+    ]
+  },
+  "version": "76"
+}
